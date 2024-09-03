@@ -1,0 +1,116 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #333;
+    color: white;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttons button {
+    color: white;
+    text-align: right;
+    background-color: #555;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 650px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#info {
+    color: #fd4;
+}
+
+#game:focus #words {
+    filter: blur(0);
+}
+
+#words {
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px; /* Adjusted font size */
+    color:  #969292;
+    filter: blur(5px);
+}
+
+#game:focus #focus-error {
+    display: none;
+}
+
+#focus-error {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.icon-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-regular.fa-keyboard {
+    width: 50px;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #fd4;
+}
+
+.roboto-thin {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.paragraph {
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.word {
+    display: inline-block; /* Ensure words stay on the same line */
+    margin-right: 5px; /* Space between words */
+    font-size: 24px; /* Larger font size */
+}
+
+.letter {
+    display: inline; /* Ensure letters are inline */
+    font-size: 24px; /* Larger font size */
+}
+
+.letter.correct {
+    color: #fff;
+}
+
+.letter.incorrect {
+    color: red;
+}
+
+#wpm-display{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fd4;
+    margin-top: 60px;
+    font-size: 30px;
+
+    font-family: "Protest Guerrilla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

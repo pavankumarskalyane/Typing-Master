@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <link rel="stylesheet" href="1style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="icon-text-container">
+        <i class="fa-regular fa-keyboard"></i>
+        <h1>Type Master</h1>
+    </div>
+    <div id="header">
+        <div id="info">30</div>
+        <div id="buttons">
+            <button onclick="newgame()">New Game</button>
+        </div>
+    </div>
+    <div id="game" tabindex="0">
+        <div id="words"></div>
+        <div id="cursor"></div>
+        <div id="focus-error">Click here to focus</div>
+    </div>
+    <div id="wpm-display"></div>
+
+    <!-- Container for the graph -->
+    <div id="graph-container">
+        <canvas id="speedGraph" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Container for the speed message -->
+    <div id="speed-message"></div>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Include your custom script -->
+    <script src="app.js"></script>
+</body>
+</html>
